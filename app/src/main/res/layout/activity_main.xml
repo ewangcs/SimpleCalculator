@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.sjsu.eyw277.simplecalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
+        android:gravity="bottom|right"
+        android:text="0"
+        android:textAlignment="gravity"
+        android:background="#000000"
+        android:textColor="#3fff3f"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            style="@style/DigitButton"
+            android:text="1" />
+        <Button
+            style="@style/DigitButton"
+            android:text="2" />
+        <Button
+            style="@style/DigitButton"
+            android:text="3" />
+        <Button
+            style="@style/OperationButton"
+            android:text="+" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            style="@style/DigitButton"
+            android:text="4" />
+        <Button
+            style="@style/DigitButton"
+            android:text="5" />
+        <Button
+            style="@style/DigitButton"
+            android:text="6" />
+        <Button
+            style="@style/OperationButton"
+            android:text="-" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            style="@style/DigitButton"
+            android:text="7" />
+        <Button
+            style="@style/DigitButton"
+            android:text="8" />
+        <Button
+            style="@style/DigitButton"
+            android:text="9" />
+        <Button
+            style="@style/DigitButton"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            style="@style/OperationButton"
+            android:text="*" />
+        <Button
+            style="@style/OperationButton"
+            android:text="/" />
+        <Button
+            style="@style/OperationButton"
+            android:text="C" />
+        <Button
+            style="@style/OperationButton"
+            android:text="=" />
+    </LinearLayout>
+
+</LinearLayout>
